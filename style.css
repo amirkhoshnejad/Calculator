@@ -1,0 +1,99 @@
+body,html {
+
+    height: 100%;
+    margin: 0;
+}
+
+.top-section {
+
+    height: 32px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+}
+
+.botton {
+    color: black;
+    background-color: #f7f7f7;
+    /* رنگ متن دکمه */
+    text-decoration: none;
+    padding: 8px;/*این به جه دردی میخوره*/
+    text-align: center;
+    margin: 1px;
+    /*background-color: #2ecc71;*/
+    /* رنگ پس زمینه دکمه */
+    border-radius: 1px;
+}
+.botton:hover {
+    background-color: #e0e0e0;
+    /* تغییر رنگ پس زمینه در حالت هاور */
+    color: #fff;
+}
+.top-botton{
+    color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    margin: 1px;
+    
+}
+.top-botton:hover{
+    background-color: red;
+    color: white;
+}
+
+/* استایل دکمه‌ها */
+.button-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.bottom-section {
+    height: calc(100% - 32px);
+    display: flex;
+}
+
+.left-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-top {
+    height: 46%;
+    display: flex;
+    background-color: red;
+    /* یک رنگ به عنوان مثال */
+}
+
+.left-bottoom {
+    height: 100%;
+    /*background-color: #f7f7f7;*/
+    background-color: #2ecc71;
+    /* یک رنگ دیگر به عنوان مثال */
+}
+
+.right-bottom {
+    width: 400px;
+
+    background-color: #f7f7f7;
+    /* یک رنگ دیگر به عنوان مثال */
+}
+
+@media (max-width: 555px) {
+    body {
+        flex-direction: column;
+        /* تغییر جهت به عمودی */
+
+    }
+
+    .right-bottom {
+        display: none;
+        /* حذف نمایش بخش راست */
+    }
+
+}

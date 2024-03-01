@@ -3,95 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-width,initial-scale=1.0">
-    <style>
-        body, html {
-
-            height: 100%;
-            margin: 0;
-        }
-
-        .top-section {
-            
-            height: 32px;
-            background-color: #3498db; /* یک رنگ به عنوان مثال */
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 0 10px;
-        }
-
-        .botton {
-            color: #ffffff; /* رنگ متن دکمه */
-            text-decoration: none;
-            padding: 8px;
-            text-align: center;
-            text-decoration: none;
-            margin: 1px;
-            background-color: #2ecc71; /* رنگ پس زمینه دکمه */
-            border-radius: 1px;
-
-        }
-        .botton:hover {
-            background-color: #27ae60; /* تغییر رنگ پس زمینه در حالت هاور */
-            color: #fff;
-        }
-        /* استایل دکمه‌ها */
-        .button-container {
-            height: 100%;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-        .bottom-section {
-            height: calc(100% - 32px);
-            display: flex;
-        }
-
-        .left-bottom {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .left-top {
-            height: 46%;
-            background-color: #2ecc71; /* یک رنگ به عنوان مثال */
-        }
-
-        .left-bottoom {
-            height: 100%;
-            background-color: #e74c3c; /* یک رنگ دیگر به عنوان مثال */
-        }
-
-        .right-bottom {
-            width: 400px;
-            
-            background-color: #fcfcfc; /* یک رنگ دیگر به عنوان مثال */
-        }
-
-        @media (max-width: 555px) {
-            body {
-                flex-direction: column; /* تغییر جهت به عمودی */
-		
-            }
-
-            .right-bottom {
-                display: none; /* حذف نمایش بخش راست */
-            }
-	        
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top-section">
-        <h1>Calculator</h1>
-        <a href="#" class="botton">-</a>
-        <a href="#" class="botton">دکمه دوم</a>
-        <a href="#" class="botton">دک سوم</a>
+        <h1 style="background-color: red; justify-content:space-between;">Calculator</h1>
+        <a class="botton">-</a>
+        <a class="botton">□</a>
+        <a class="top-botton">×</a>
     </div>
     <div class="bottom-section">
         <div class="left-bottom">
-            <div class="left-top"></div>
+            <div class="left-top">
+                <a>hi</a>
+                <p>Calculator</p>
+                <div>
+                    <a class="botton">mio</a>
+                </div>
+            </div>
             <div class="left-bottoom">
                 <div class="button-container">
 	                <a href="#" class="botton">%</a>
