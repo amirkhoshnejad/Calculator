@@ -6,7 +6,7 @@ body,html {
 
 .top-section {
     height: 32px;
-    background-color: #3498db;
+    background-color: #f7f7f7;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -19,7 +19,7 @@ body,html {
 .botton {
     display: flex;
     color: black;
-    background-color: #f7f7f7;
+    background-color: #eeeeee;
     /* رنگ متن دکمه */
     text-decoration: none;
     justify-content: center;
@@ -32,8 +32,14 @@ body,html {
 }
 .botton:hover {
     background-color: #e0e0e0;
-    color: #fff;
+    color: black;
 }/*مربوط به دکمه ها*/
+.num-btn{
+    background-color: #fcfcfc;
+}
+.op-btn:hover{
+    background-color: #1583da;
+}
 .top-botton{
     color: black;
     padding: 14px;
@@ -72,8 +78,19 @@ a.top-botton:hover{
 
 .left-top {
     height: 46%;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: red;
+}
+.left-item{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.horizontal-item{
+    display:flex;
+    flex-direction: row;
 }
 div.bottom-section div.left-bottom div.left-top div.navi{
     background-color: #2ecc71;
@@ -98,7 +115,7 @@ div.bottom-section div.left-bottom div.left-top div.navi:hover{
 .left-bottoom {
     display: grid;
     height: 100%;
-    background-color: #2ecc71;
+    background-color: #f7f7f7;
     padding: 1px;
 }
 
