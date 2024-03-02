@@ -1,54 +1,61 @@
 body,html {
-
     height: 100%;
     margin: 0;
+    font-family: Segoe UI;
 }
 
 .top-section {
-
     height: 32px;
     background-color: #3498db;
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between;
     align-items: center;
     padding: 0px;
 }
+.top-btn{
+    display: flex;
+}
 
 .botton {
+    display: flex;
     color: black;
     background-color: #f7f7f7;
     /* رنگ متن دکمه */
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
     padding: 8px;/*این به جه دردی میخوره*/
     text-align: center;
-    margin: 1px;
-    /*background-color: #2ecc71;*/
-    /* رنگ پس زمینه دکمه */
+    margin:1px;
+    gap: 2px;
     border-radius: 1px;
 }
 .botton:hover {
     background-color: #e0e0e0;
-    /* تغییر رنگ پس زمینه در حالت هاور */
     color: #fff;
-}
+}/*مربوط به دکمه ها*/
 .top-botton{
-    color: #ffffff;
-    padding: 8px;
+    color: black;
+    padding: 14px;
     text-align: center;
     margin: 1px;
-    
+    font-size: 30px;
+    width: 12px;
 }
-.top-botton:hover{
+div.top-section div.top-botton:hover{
     background-color: red;
     color: white;
 }
+a.top-botton:hover{
+    background-color: #e0e0e0;
+    color: black;
+}/*مربوط به قسمت بالایی
 
 /* استایل دکمه‌ها */
 .button-container {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
 }
 
 .bottom-section {
@@ -67,28 +74,43 @@ body,html {
     height: 46%;
     display: flex;
     background-color: red;
-    /* یک رنگ به عنوان مثال */
+}
+div.bottom-section div.left-bottom div.left-top div.navi{
+    background-color: #2ecc71;
+    justify-content: center;
+    align-items: center;
+}
+
+div.bottom-section div.left-bottom div.left-top div.navi:hover{
+    background-color: yellow;
+}
+.navi{
+    background-color: #3498db;
+    height: 100px;
+    padding-top: 5px;
+    text-align:center;
+    justify-content:center ;
+    height: 35px;
+    width: 40px;
+    font-size: 20px;
 }
 
 .left-bottoom {
+    display: grid;
     height: 100%;
-    /*background-color: #f7f7f7;*/
     background-color: #2ecc71;
-    /* یک رنگ دیگر به عنوان مثال */
+    padding: 1px;
 }
 
 .right-bottom {
     width: 400px;
-
     background-color: #f7f7f7;
-    /* یک رنگ دیگر به عنوان مثال */
 }
 
 @media (max-width: 555px) {
     body {
         flex-direction: column;
         /* تغییر جهت به عمودی */
-
     }
 
     .right-bottom {
