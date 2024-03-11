@@ -36,6 +36,7 @@ body,html {
 }/*مربوط به دکمه ها*/
 .num-btn{
     background-color: #fcfcfc;
+    font-weight: bold;
 }
 .op-btn:hover{
     background-color: #1583da;
@@ -62,6 +63,7 @@ a.top-botton:hover{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    font-size: 20px;
 }
 
 .bottom-section {
@@ -79,7 +81,7 @@ a.top-botton:hover{
 .left-top {
     height: 46%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     background-color: red;
 }
 .left-item{
@@ -91,6 +93,8 @@ a.top-botton:hover{
 .horizontal-item{
     display:flex;
     flex-direction: row;
+    height: 50px;
+    margin-bottom: 1px;
 }
 div.bottom-section div.left-bottom div.left-top div.navi{
     background-color: #2ecc71;
@@ -120,19 +124,53 @@ div.bottom-section div.left-bottom div.left-top div.navi:hover{
 }
 
 .right-bottom {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: min(400px);
     background-color: #f7f7f7;
 }
 
+.line{
+    display: flex;
+    flex-direction: row;
+}
+.line-1 {
+    border-top: 4px solid #3498db;
+    width: 55px;
+    margin-left: 2px;
+}
+.zero{
+    display: flex; 
+    justify-content: flex-end; 
+    margin-right: 5px;
+    font-size: 30px; 
+    font-weight: bold;
+}
+@media (min-height: 800px) {
+    .zero {
+        font-size: 75px;
+    }
+}
+
+/*.line-2 {
+    border-top: 5px solid #3498db;
+    margin-left: 2px;
+    width: 65px;
+}*/
+
+.right-botom{
+    display: flex;
+}
+/*
 @media (max-width: 555px) {
     body {
         flex-direction: column;
-        /* تغییر جهت به عمودی */
+        /* تغییر جهت به عمودی 
     }
 
     .right-bottom {
         display: none;
-        /* حذف نمایش بخش راست */
+        /* حذف نمایش بخش راست 
     }
 
-}
+}*/
