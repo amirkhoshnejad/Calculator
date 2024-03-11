@@ -19,7 +19,7 @@ body,html {
 .botton {
     display: flex;
     color: black;
-    background-color: #eeeeee;
+    background-color: #e9e5e55d;
     /* رنگ متن دکمه */
     text-decoration: none;
     justify-content: center;
@@ -111,7 +111,7 @@ a.top-botton:hover{
 .left-top {
     height: 46%;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
     background-color: #f7f7f7;
 }
 .left-item{
@@ -125,24 +125,18 @@ a.top-botton:hover{
     flex-direction: row;
     margin-bottom: 1px;
 }
-div.bottom-section div.left-bottom div.left-top div.navi{
-    background-color: #f7f7f7;
-    justify-content: center;
-    align-items: center;
-}
 
-div.bottom-section div.left-bottom div.left-top div.navi:hover{
-    background-color: #e0e0e0;
-}
 .navi{
-    background-color: #3498db;
-    height: 100px;
-    padding-top: 5px;
-    text-align:center;
-    justify-content:center ;
-    height: 35px;
-    width: 40px;
-    font-size: 20px;
+    height:40px; 
+    width: 40px; 
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    font-size: 20px
+}
+.navi:hover{
+    background-color: #e0e0e0;
+    color: black;
 }
 
 .left-bottoom {
