@@ -12,6 +12,7 @@ body,html {
     align-items: center;
     padding: 0px;
 }
+
 .top-btn{
     display: flex;
 }
@@ -20,24 +21,26 @@ body,html {
     display: flex;
     color: black;
     background-color: #e9e5e55d;
-    /* رنگ متن دکمه */
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    padding: 8px;/*این به جه دردی میخوره*/
+    padding: 8px;
     text-align: center;
     margin:1px;
     gap: 2px;
     border-radius: 1px;
 }
+
 .botton:hover {
     background-color: #e0e0e0;
     color: black;
-}/*مربوط به دکمه ها*/
+}
+
 .num-btn{
     background-color: #fcfcfc;
     font-weight: bold;
 }
+
 .mn-btn{
     display: flex;
     color: rgb(161, 159, 159);
@@ -51,6 +54,7 @@ body,html {
     height: 60px;
     width: 60px;
 }
+
 .m-btn{
     display: flex;
     color: black;
@@ -64,13 +68,16 @@ body,html {
     height: 60px;
     width: 60px;
 }
+
 .m-btn:hover{
     background-color: #e0e0e0;
     color: black;
 }
+
 .op-btn:hover{
     background-color: #1583da;
 }
+
 .top-botton{
     color: black;
     padding: 14px;
@@ -79,16 +86,17 @@ body,html {
     font-size: 30px;
     width: 12px;
 }
+
 div.top-section div.top-botton:hover{
     background-color: red;
     color: white;
 }
+
 a.top-botton:hover{
     background-color: #e0e0e0;
     color: black;
-}/*مربوط به قسمت بالایی
+}
 
-/* استایل دکمه‌ها */
 .button-container {
     height: 100%;
     display: grid;
@@ -114,12 +122,14 @@ a.top-botton:hover{
     grid-template-rows: 0.3fr 1fr 0.3fr;
     background-color: #f7f7f7;
 }
+
 .left-item{
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
     font-size: 24px;
 }
+
 .horizontal-item{
     display:flex;
     flex-direction: row;
@@ -134,6 +144,7 @@ a.top-botton:hover{
     align-items: center;
     font-size: 20px
 }
+
 .navi:hover{
     background-color: #e0e0e0;
     color: black;
@@ -157,11 +168,13 @@ a.top-botton:hover{
     display: flex;
     flex-direction: row;
 }
+
 .line-1 {
     border-top: 4px solid #3498db;
     width: 55px;
     margin-left: 2px;
 }
+
 .zero{
     display: flex; 
     justify-content: flex-end; 
@@ -169,21 +182,23 @@ a.top-botton:hover{
     font-size: 30px; 
     font-weight: bold;
 }
+
 @media (min-height: 800px) {
     .zero {
         font-size: 75px;
     }
 }
 
+.right-botom{
+    display: flex;
+}
 /*.line-2 {
     border-top: 5px solid #3498db;
     margin-left: 2px;
     width: 65px;
 }*/
 
-.right-botom{
-    display: flex;
-}
+
 /*
 @media (max-width: 555px) {
     body {
