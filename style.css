@@ -38,6 +38,36 @@ body,html {
     background-color: #fcfcfc;
     font-weight: bold;
 }
+.mn-btn{
+    display: flex;
+    color: rgb(161, 159, 159);
+    background-color: #f7f7f7;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    border-radius: 1px;
+    margin-right: 2px;
+    height: 60px;
+    width: 60px;
+}
+.m-btn{
+    display: flex;
+    color: black;
+    background-color: #f7f7f7;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    border-radius: 1px;
+    margin-right: 2px;
+    height: 60px;
+    width: 60px;
+}
+.m-btn:hover{
+    background-color: #e0e0e0;
+    color: black;
+}
 .op-btn:hover{
     background-color: #1583da;
 }
@@ -82,7 +112,7 @@ a.top-botton:hover{
     height: 46%;
     display: grid;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    background-color: red;
+    background-color: #f7f7f7;
 }
 .left-item{
     border: 1px solid #ccc;
@@ -93,7 +123,6 @@ a.top-botton:hover{
 .horizontal-item{
     display:flex;
     flex-direction: row;
-    height: 50px;
     margin-bottom: 1px;
 }
 div.bottom-section div.left-bottom div.left-top div.navi{
