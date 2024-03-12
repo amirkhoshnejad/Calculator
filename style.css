@@ -28,7 +28,7 @@ body,html {
     text-align: center;
     margin:1px;
     gap: 2px;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 .botton:hover {
@@ -79,8 +79,10 @@ body,html {
 }
 
 .top-botton{
+    display: flex;
     color: black;
     padding: 14px;
+    justify-content: center;
     text-align: center;
     margin: 1px;
     font-size: 30px;
@@ -100,7 +102,7 @@ a.top-botton:hover{
 .button-container {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     font-size: 20px;
 }
 
@@ -111,13 +113,12 @@ a.top-botton:hover{
 
 .left-bottom {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .left-top {
-    height: 46%;
+    height: 60%;
     display: grid;
     grid-template-rows: 0.3fr 1fr 0.3fr;
     background-color: #f7f7f7;
@@ -170,7 +171,7 @@ a.top-botton:hover{
 }
 
 .line-1 {
-    border-top: 4px solid #3498db;
+    border-top: 4px solid orange;
     width: 55px;
     margin-left: 2px;
 }
@@ -178,12 +179,12 @@ a.top-botton:hover{
 .zero{
     display: flex; 
     justify-content: flex-end; 
-    margin-right: 5px;
+    margin-right: 20px;
     font-size: 30px; 
     font-weight: bold;
 }
 
-@media (min-height: 800px) {
+@media (min-height: 450px) {
     .zero {
         font-size: 75px;
     }
@@ -191,6 +192,7 @@ a.top-botton:hover{
 
 .right-botom{
     display: flex;
+    height: 50px;
 }
 /*.line-2 {
     border-top: 5px solid #3498db;
