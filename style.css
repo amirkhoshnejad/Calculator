@@ -102,12 +102,10 @@ body,html {
     display: flex;
     color: black;
     padding: 14px;
-<<<<<<< HEAD
+
     padding-top: 0px;
     padding-bottom: 4px;
-=======
-    justify-content: center;
->>>>>>> 4c4c56f0291a5859caa9a2c77f4bea3694c36efb
+
     text-align: center;
     justify-content: center;
     align-items: center;
