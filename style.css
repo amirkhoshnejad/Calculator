@@ -126,6 +126,7 @@ a.top-botton:hover{
 }
 
 .button-container {
+    order: 0;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -225,10 +226,16 @@ a.top-botton:hover{
     margin-left: 2px;
     width: 65px;
 }*/
+@media (max-width:740px) {
+    
+}
+@media(max-height:620px){
 
+}
+@media(max-height:410px){
 
-
-@media (max-width: 555px) {
+}
+@media (max-width: 500px) {
     body {
         flex-direction: column;
     }
@@ -241,4 +248,29 @@ a.top-botton:hover{
         display:flex;
     }
 
+}
+@media screen and (max-width:1024px) {
+    
+    a[vlaue="16"]{
+        display: none;
+    }
+    .button-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    a[vlaue="1"] {
+        order: -4;
+    }
+    
+        a[vlaue="11"] {
+            order: -2;
+        }
+    
+        a[vlaue="6"] {
+            order: -3;
+        }
+    
+        a[vlaue="21"] {
+            order: -1;
+        }
 }
