@@ -126,7 +126,8 @@ a.top-botton:hover{
 }
 
 .button-container {
-    height: 100%;
+    order: 0;
+    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     font-size: 20px;
@@ -138,6 +139,7 @@ a.top-botton:hover{
 }
 
 .left-bottom {
+    height: calc(100%-32px);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,6 +190,7 @@ a.top-botton:hover{
     display: flex;
     flex-direction: column;
     width: min(400px);
+    height:100%;
     background-color: #f7f7f7;
 }
 
@@ -225,20 +228,45 @@ a.top-botton:hover{
     margin-left: 2px;
     width: 65px;
 }*/
+@media (max-width:740px) {
+    .right-bottom{
+        width: 40%;
+    }
+}
+@media(max-height:620px){
 
+}
+@media(max-height:410px){
 
-
-@media (max-width: 555px) {
+}
+@media (max-width: 500px) {
     body {
         flex-direction: column;
     }
-
     .right-bottom {
         display: none;
     }
-
     .h-btn{
         display:flex;
     }
-
+}
+@media screen and (max-width:1024px) {    
+    a[value="16"]{
+        display: none;
+    }
+    .button-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    a[value="1"] {
+        order: -4;
+    }
+    a[value="6"] {
+        order: -3;
+    }
+    a[value="11"] {
+        order: -2;
+    }
+    a[value="21"] {
+        order: -1;
+    }
 }
