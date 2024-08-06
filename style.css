@@ -68,11 +68,13 @@ body,html {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;    
     border-radius: 1px;
     margin-right: 2px;
-    height: 60px;
-    width: 60px;
+    height: 100%;
+    width: 100%;
 }
 
 .m-btn{
@@ -82,13 +84,17 @@ body,html {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;  
+    font-size: 13px;
+    font-weight: bold;   
     border-radius: 1px;
     margin-right: 2px;
-    height: 60px;
-    width: 60px;
+    height: 100%;
+    width: 100%;
 }
-
+.mx-btn{
+    display: none;
+}
 .m-btn:hover{
     background-color: #e0e0e0;
     color: black;
@@ -102,10 +108,8 @@ body,html {
     display: flex;
     color: black;
     padding: 14px;
-
     padding-top: 0px;
     padding-bottom: 4px;
-
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -145,7 +149,8 @@ a.top-botton:hover{
 }
 
 .left-top {
-    height: 60%;
+    height: 50%;
+    
     display: grid;
     grid-template-rows: 0.3fr 1fr 0.3fr;
     background-color: #f7f7f7;
@@ -161,7 +166,9 @@ a.top-botton:hover{
 .horizontal-item{
     display:flex;
     flex-direction: row;
-    margin-bottom: 1px;
+    gap: 2px;
+    margin-bottom: 2px;
+    
 }
 
 .navi{
@@ -188,7 +195,8 @@ a.top-botton:hover{
 .right-bottom {
     display: flex;
     flex-direction: column;
-    width: min(400px);
+    height: auto;
+    width: 450px;
     background-color: #f7f7f7;
 }
 
@@ -226,14 +234,24 @@ a.top-botton:hover{
     margin-left: 2px;
     width: 65px;
 }*/
-@media (max-width:740px) {
-    
-}
-@media(max-height:620px){
+@media(max-width:320px){
+    .horizontal-item{
+        width: 320px;
+    }
 
 }
-@media(max-height:410px){
-
+@media (min-width: 720px) {
+    .m-btn{
+        width: calc(max-width /6);
+    }
+    .mn-btn{
+        width: calc(100% / 6);
+    }
+}
+@media(max-width:740px){
+    .right-bottom{
+        width: 70%;
+    }
 }
 @media (max-width: 500px) {
     body {
@@ -247,8 +265,12 @@ a.top-botton:hover{
     .h-btn{
         display:flex;
     }
+    .mx-btn{
+        display: flex;
+    }
 
 }
+
 @media screen and (max-width:1024px) {
     
     a[vlaue="16"]{
