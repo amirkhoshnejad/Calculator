@@ -2,6 +2,11 @@ body,html {
     height: 100%;
     margin: 0;
     font-family: Segoe UI;
+    /* font-size:2vw!important; */
+}
+:root
+{
+    font-size: 20px;
 }
 
 .top-section {
@@ -60,23 +65,6 @@ body,html {
     background-color: #e0e0e0;
     color: black;
 }
-
-.mn-btn{
-    display: flex;
-    color: rgb(161, 159, 159);
-    background-color: #f7f7f7;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;    
-    border-radius: 1px;
-    margin-right: 2px;
-    height: 100%;
-    width: 100%;
-}
-
 .m-btn{
     display: flex;
     color: black;
@@ -91,6 +79,9 @@ body,html {
     margin-right: 2px;
     height: 100%;
     width: 100%;
+}
+.mn-btn{
+    color: rgb(161, 159, 159);
 }
 .mx-btn{
     display: none;
@@ -164,11 +155,11 @@ a.top-botton:hover{
 }
 
 .horizontal-item{
-    display:flex;
+    display: flex;
     flex-direction: row;
     gap: 2px;
     margin-bottom: 2px;
-    
+    max-width: 400px;
 }
 
 .navi{
@@ -198,6 +189,7 @@ a.top-botton:hover{
     height: auto;
     width: 450px;
     background-color: #f7f7f7;
+    font-size: 1rem;
 }
 
 .line{
@@ -240,14 +232,14 @@ a.top-botton:hover{
     }
 
 }
-@media (min-width: 720px) {
+/*@media (min-width: 720px) {
     .m-btn{
         width: calc(max-width /6);
     }
     .mn-btn{
         width: calc(100% / 6);
     }
-}
+}*/
 @media(max-width:740px){
     .right-bottom{
         width: 70%;
@@ -272,27 +264,27 @@ a.top-botton:hover{
 }
 
 @media screen and (max-width:1024px) {
-    
-    a[vlaue="16"]{
+
+    a[value="16"]{
         display: none;
     }
     .button-container{
         grid-template-columns: repeat(4, 1fr);
     }
 
-    a[vlaue="1"] {
+    a[value="1"] {
         order: -4;
     }
-    
-        a[vlaue="11"] {
+
+        a[value="11"] {
             order: -2;
         }
-    
-        a[vlaue="6"] {
+
+        a[value="6"] {
             order: -3;
         }
     
-        a[vlaue="21"] {
+        a[value="21"] {
             order: -1;
         }
 }
